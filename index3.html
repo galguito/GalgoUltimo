@@ -36,7 +36,9 @@
     <header class="text-center py-3 mt-3 text-primary">
         <h1>Panel de Seguimiento</h1>
         <p>Controla jugadores, entrenamientos y estadisticas</p>
-        <button type="button" class="btn btn-primary">Nuevo entrenamiento</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Nuevo Entrenamiento
+        </button>
     </header>
     <div class="container-fluid">
         <div class="row mt-3 g-3">
@@ -156,7 +158,46 @@
     </div>
 
 
-
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo entrenamiento</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+            <label for="nombre" class="form-label">
+                Nombre
+            </label>
+            <input type="text" id="fecha" class="form-control mb-2">
+            <label for="fecha" class="form-label">
+                Fecha
+            </label>
+            <input type="date" id="fecha" class="form-control mb-2">
+            <label for="cat" class="form-label">
+                Categoria
+            </label>
+            <select name="" id="cat" class="form-select">
+                <option value="">
+                    Sub 12
+                </option>
+                <option value="">
+                    Sub 14
+                </option>
+                <option value="">
+                    Sub 16
+                </option>
+            </select>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Reservar Entrenamiento</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
